@@ -1,0 +1,2 @@
+# Hands-On-Quantum-Cryptography-Undergraduate-Experimentation-with-the-B92-Protocol
+This repository presents an educational emulation of the B92 Quantum Key Distribution protocol using pulsed lasers. It simplifies the setup for secure key exchange demonstrations, illustrating core quantum cryptography principles like eavesdropping detection and measurement disturbance in a lab-friendly environment.
