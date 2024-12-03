@@ -10,33 +10,26 @@ Ultracold Atoms, Department of Physics, Massachusetts Institute of Technology, C
 
 ## Simulation Codes
 
-This repository includes two MATLAB simulation codes that demonstrate key aspects of the B92 Quantum Key Distribution (QKD) protocol. Each simulation explores the "granted bits" proportion based on different measurement and eavesdropping scenarios, providing valuable insights into the behavior of the protocol.
+This repository includes two MATLAB simulation codes that demonstrate key aspects of the B92 Quantum Key Distribution (QKD) protocol. Each simulation explores the "granted bits" proportion under different scenarios.
 
-### 1. `B92_granted_bits_simulation_With_Eve_13_10_2024.m`
-This simulation introduces eavesdropping probabilities into the B92 protocol, allowing users to study the effects of an eavesdropper (Eve) on the proportion of "granted bits." It uses updated probabilities to reflect potential disturbances caused by eavesdropping attempts. 
+### 1. `B92loop_Alice_bob_13_10_2024.m`
+This simulation focuses on the interaction between Alice and Bob in the absence of eavesdropping. It evaluates the proportion of "granted bits" while incorporating different probabilities for measurement outcomes according to the quantum mecanica calculations presented in the paper.
 
 #### Features:
 - Calculates the proportion of granted bits as a function of the number of transmitted bits \(N\).
-- Evaluates variability across multiple runs to capture the stochastic nature of quantum measurements.
+- Compares theoretical and observed proportions of granted bits.
+- Highlights the protocol's robustness through visualization of variability across multiple runs.
 - Outputs a plot with log-scaled \(x\)-axis, showing granted bit proportions and error regions.
 
-### 2. `B92loop_Alice_bob_13_10_2024.m`
-This simulation focuses on the interaction between Alice and Bob in the absence of eavesdropping. It evaluates the proportion of "granted bits" while incorporating different probabilities for measurement outcomes.
+### 2. `B92_granted_bits_simulation_With_Eve_13_10_2024.m`
+This simulation introduces eavesdropping probabilities into the B92 protocol, allowing users to study the effects of an eavesdropper (Eve) on the proportion of "granted bits." It uses updated probabilities to reflect potential disturbances caused by eavesdropping attempts.
 
 #### Features:
-- Compares theoretical and observed proportions of granted bits.
-- Highlights the protocol's robustness through variability visualization across multiple runs.
-- Outputs a plot similar to the first simulation, with clearly labeled axes and legends.
+- Evaluates the impact of eavesdropping on the granted bits proportion.
+- Captures variability across multiple runs to demonstrate the stochastic nature of quantum measurements.
+- Outputs a plot similar to the first simulation, with additional analysis on eavesdropping effects.
 
 ### Outputs
 Both simulations generate plots showing the proportion of "granted bits" as a function of \(N\), with:
-- Logarithmic scaling on the \(x\)-axis to represent large ranges of \(N\).
+- Logarithmic scaling on the \(x\)-axis for a clear representation of large ranges of \(N\).
 - Shaded regions indicating variability across runs.
-- Titles, legends, and labeled axes for enhanced clarity.
-
-### How to Use
-1. Install MATLAB.
-2. Download the desired `.m` file from this repository.
-3. Run the script in MATLAB to generate results.
-
-These codes are designed for educational purposes, providing hands-on insights into the B92 protocol's operation and behavior under varying conditions.
